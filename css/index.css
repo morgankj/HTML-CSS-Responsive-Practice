@@ -1,8 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
+/*CSS Reset*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -27,15 +23,13 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-
-* {
+*{
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    max-width: 100%;
-    /* border: 1px solid grey; */
+    padding:0;
+    margin:0;
+    max-width:100%;
+    /* border:1px solid grey; */
 }
-
 /*General Styles*/
 html{
     font-size:62.5%;
@@ -55,8 +49,8 @@ a{
 h1, h2, h3{
     font-family: 'Oxygen', sans-serif;
     color:#266035;
-    text-align: center;
-    margin-bottom: 5%;
+    text-align:center;
+    margin-bottom:5%;
 }
 h1{
     color:#FBFFFB;
@@ -71,7 +65,6 @@ h3{
 section{
     padding:4% 0;
 }
-
 button{
     padding:3% 5%;
     margin-top:5%;
@@ -85,42 +78,38 @@ button:hover{
     color:#266035;
     background-color:#fff;
 }
-
 /*header section styles*/
-nav {
-    display: flex;
+nav{
+    display:flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 999; /*this is whether it goes on top of content with everything behind it or the reverse*/
-    background-color: rgba(255, 255, 255, 0.8);
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:999;
+    background-color:rgba(255,255,255,0.8);
 }
-
-.logo {
-    width: 6%;
+.logo{
+    width:6%;
 }
-
-.links {
-    width: 50%;
-    display: flex;
+.links{
+    width:50%;
+    display:flex;
     justify-content: space-evenly;
 }
 
-/* Top Section styles */
-#top {
-    height: 95vh;
-    background-image: url('../images/header.jpg');
-    background-size: cover;
+/*Top Section Styles*/
+#top{
+    height:95vh;
+    background-image:url('../images/header.jpg');
+    background-size:cover;
     background-repeat: no-repeat;
     background-position: bottom;
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align:center;
 }
-
 #top button{
     color:#266035;
     background-color:#fff;
@@ -129,101 +118,89 @@ nav {
     color:#fff;
     background-color: #266035;
 }
-
-#about {
-    height: 75vh;
+/*About Section Styles*/
+#about{
+    height:75vh;
     background-image: url('../images/about-img.jpg');
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
-    background-position: right;
-    display: flex;
+    background-position:right;
+    display:flex;
     justify-content: flex-end;
     align-items: center;
 }
-
-#about div {
-    width: 20%;
-    margin-right: 10%;
+#about div{
+    width:20%;
+    margin-right:10%;
 }
 
-/*Shop Section Styles*/
-#shop {
-    padding-bottom: 0;
+/*Shop Section styles*/
+#shop{
+    padding-bottom:0;
 }
-
 .container{
-    display: flex;
-    flex-wrap: wrap;
+    display:flex;
+    flex-wrap:wrap;
+}
+.bg-img, .text{
+    width:50%;
 }
 
-.bg-img, .text {
-    width: 50%;
-}
-
-.text {
-    display: flex;
+.text{
+    display:flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    padding: 5%;
+    text-align:center;
+    padding:5%;
 }
-
-.text div {
-    width: 50%;
+.text div{
+    width:60%;
 }
-
-.bg-img {
-    background-size: cover;
+.bg-img{
+    background-size:cover;
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position:bottom center;
+}
+.succulants{
+    background-image:url('../images/succulants.jpg');
+}
+.cacti{
+    background-image:url('../images/cacti.jpg');
+}
+.tropicals{
+    background-image:url('../images/tropicals.jpg');
 }
 
-.succulants {
-    background-image: url('../images/succulants.jpg');
+/*footer section styles */
+footer{
+    display:flex;
+    flex-wrap:wrap;
+    background-color:#266035;
+    padding:4% 0;
 }
-
-.cacti {
-    background-image: url('../images/cacti.jpg');
+footer h2, .bottom{
+    width:100%;
+    color:#fff;
 }
-
-.tropicals {
-    background-image: url('../images/tropicals.jpg');
+.bottom{
+    text-align:right;
+    margin-right:5%;
+    margin-top:2%;
 }
-
-/*footer section styles*/
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #266035;
-}
-
-footer h2, .bottom {
-    width: 100%;
-    color: #fff;
-}
-
-.bottom {
-    text-align: right;
-    margin-bottom: 5%;
-}
-
-.left, .right {
-    width: 50%;
-    color: #fff;
-    display: flex;
+.left, .right{
+    width:50%;
+    color:#fff;
+    display:flex;
     justify-content: center;
-    align-items: center;
+    align-items:center;
 }
-
-.right img {
-    width: 50%;
+.right img{
+    width:50%;
 }
-
-.left div {
-    width: 50%;
-    line-height: 3;
+.left div{
+    width:50%;
+    line-height:3;
 }
-
-footer h3, footer a {
-    color: #fff;
+footer h3, footer a{
+    color:#fff;
 }
